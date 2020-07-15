@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <CkNav />
+    <CkHome />
+    <CkBottomNav />
+    <CkFooter />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import CkHome from "./components/CkHome.vue";
+import CkNav from "./components/CkNav.vue";
+import CkBottomNav from "./components/CkBottomNav.vue";
+import CkFooter from "./components/CkFooter.vue";
+// import { SfButton } from "@storefront-ui/vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    CkHome,
+    CkNav,
+    CkBottomNav,
+    CkFooter,
   }
 };
 </script>
 
 <style lang="scss">
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
