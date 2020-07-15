@@ -1,4 +1,4 @@
-# ck-tailwind
+# SFUI with Tailwind
 
 ## Project setup
 ```
